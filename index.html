@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/areas.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1> AREAS GEOMETRICAS</h1>
+        <!-- para el contenido -->
+        <div id="formularioContenedor">
+            <label for="figura"> Seleccione una figura geometrica</label>
+            <select name="figura" id="figura" onchange="mostrar()">
+                <option value="circulo">Circulo</option>
+                <option value="cuadrado">Cuadrado</option>
+                <option value="rectangulo">Rectangulo</option>
+                <option value="salir">Salir</option>
+            </select>
+
+            <!-- area del cuadrado -->
+            <div id="cuadradoForm" class="formulario">
+                <label for="lado">Lado:</label>
+                <input type="number" id="lado" placeholder="Ingrese lado" >
+            </div>
+
+            <!-- area del circulo -->
+            <div id="circuloForm" class="formulario">
+                <label for="radio">Radio:</label>
+                <input type="number" id="radio" placeholder="Ingrese el radio" >
+            </div>
+
+            <!-- area del rectangulo -->
+            <div id="rectanguloForm" class="formulario">
+                <label for="base">Base:</label>
+                <input type="number" id="base" placeholder="Ingrese la base" >
+                <label for="altura">Altura:</label>
+                <input type="number" id="altura" placeholder="Ingrese la altura">
+            </div>
+            <!-- Calcula el area de la figura geometrica -->
+            <button onclick="calcular()">Calular Area</button>
+        </div>
+        <!-- MUESSTRA EL RESULTADO-->
+        <div id="resultado"></div>
+
+        <!-- Sección de Despedida -->
+        <div id="despedidaContainer">
+            <img id="despedidaImagen" src="" alt="" title="">
+            <p>REGRESA PRONTO. ¡TE EXTRAÑAREMOS!</p>
+        </div>
+        
+    </div>
+
+    <script src="js/areas.js"></script>
+</body>
+</html>
